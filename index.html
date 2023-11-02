@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pixel Tracking Implementation Demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar bg-dark">
+        <div class="container d-flex justify-content-center my-2">
+            <span class="navbar-brand mb-0 text-white">Pixel Tracking Implementation</span>
+        </div>
+    </nav>
+    <main class="container mt-3">
+        <form id="sample-form">
+            <div class="mb-3">
+                <label for="mail" class="form-label">Recruiter's Email</label>
+                <input type="email" class="form-control" id="mail" placeholder="name@example.com"
+                    value="hello@mail.com">
+            </div>
+            <div class="mb-3">
+                <label for="title" class="form-label">Message Title</label>
+                <input type="text" class="form-control" id="title" placeholder="Application for...">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
+            <button type="submit" id="send-btn" class="btn btn-outline-primary">
+                <span>Send</span>
+                <i class="ms-1 fa-solid fa-paper-plane" id="plane-icon"></i>
+                <div class=" spinner-border text-primary mt-2" role="status" id="loadingSpinner"
+                    style="width: 14px; height: 14px; border: dotted 2px; display:none;">
+                    </div>
+            </button>
+
+        </form>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
